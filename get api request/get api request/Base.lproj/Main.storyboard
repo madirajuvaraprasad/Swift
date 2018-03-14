@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bGg-Ra-Ttg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="yce-ug-ker">
+            <objects>
+                <viewController id="bGg-Ra-Ttg" customClass="ViewController" customModule="get_api_request" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MZr-NU-rBZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Wya-x7-hLm">
+                                <rect key="frame" x="136.5" y="258" width="101" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrM-lE-4q6">
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="GET"/>
+                                        <connections>
+                                            <action selector="onGetTapped:" destination="bGg-Ra-Ttg" eventType="touchUpInside" id="exu-P6-D23"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUJ-ds-sqP">
+                                        <rect key="frame" x="0.0" y="90" width="101" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="POST"/>
+                                        <connections>
+                                            <action selector="onPostTapped:" destination="bGg-Ra-Ttg" eventType="touchUpInside" id="2Ge-em-aoI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="EUJ-ds-sqP" secondAttribute="trailing" id="Ixy-fs-vbv"/>
+                                    <constraint firstItem="YrM-lE-4q6" firstAttribute="top" secondItem="Wya-x7-hLm" secondAttribute="top" id="NCv-6o-4hA"/>
+                                    <constraint firstItem="YrM-lE-4q6" firstAttribute="leading" secondItem="Wya-x7-hLm" secondAttribute="leading" id="YT8-h5-OsN"/>
+                                    <constraint firstAttribute="trailing" secondItem="YrM-lE-4q6" secondAttribute="trailing" id="das-dp-3QA"/>
+                                    <constraint firstAttribute="bottom" secondItem="EUJ-ds-sqP" secondAttribute="bottom" id="jn1-7r-eqY"/>
+                                    <constraint firstItem="EUJ-ds-sqP" firstAttribute="leading" secondItem="Wya-x7-hLm" secondAttribute="leading" id="w0E-bI-NnR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wya-x7-hLm" firstAttribute="centerX" secondItem="MZr-NU-rBZ" secondAttribute="centerX" id="Jqa-xh-0Wo"/>
+                            <constraint firstItem="Wya-x7-hLm" firstAttribute="centerY" secondItem="MZr-NU-rBZ" secondAttribute="centerY" id="tPy-5e-icp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U8k-tO-Bwg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RjR-CZ-cQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="-137"/>
+        </scene>
+    </scenes>
+</document>
